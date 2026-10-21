@@ -37,7 +37,7 @@ public class Courier {
         joinColumns = @JoinColumn(name = "courier_id"),
         inverseJoinColumns = @JoinColumn(name = "delivery_zone_id")
     )
-    private List<DeliveryZone> deliveryZones;
+    private List<DeliveryZone> deliveryZones = new java.util.ArrayList<>();
 
     public UUID getId() {
         return id;
