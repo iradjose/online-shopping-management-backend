@@ -26,6 +26,8 @@ public class Customer {
     @Column(unique = true)
     private String customerCode;
 
+    private String email;
+
     public UUID getId() {
         return id;
     }
@@ -64,5 +66,13 @@ public class Customer {
 
     public void setCustomerCode(String customerCode) {
         this.customerCode = customerCode;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
